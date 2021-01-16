@@ -1,0 +1,68 @@
+<mat-toolbar dir="rtl">
+  <div style="width: 100%">
+    <div class="navbar">
+      <div fxLayout="row inline" style="width: 100%">
+        <button
+          mat-icon-button
+          (click)="toggle()"
+          [ngStyle.lt-md]="{ height: '100%' }"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <mat-icon class="menu-logo" style="margin-top: 5px">menu</mat-icon>
+        </button>
+
+        <img class="logo" src="./assets/images/logo.png" />
+
+        <div
+          class="menu-nav-items"
+          fxHide
+          fxShow.lg
+          fxShow.md
+          fxShow.xl
+          fxLayoutAlign="center center"
+        >
+          <!-- <div class="item">
+            <span> خانه </span>
+          </div>
+
+          <div class="item">
+            <span> خانه </span>
+          </div>
+
+          <div class="item">
+            <span> خانه </span>
+          </div> -->
+        </div>
+      </div>
+
+      <div fxLayout="row inline" fxHide fxShow.lg fxShow.md fxShow.xl>
+        <!-- <div
+          fxLayout="row inline"
+          style="height: 40px"
+          fxLayoutAlign="center center"
+        >
+          <div class="date-time">
+            <div>{{ date }}</div>
+            <div style="float: left">{{ time }}</div>
+          </div>
+        </div> -->
+        <!-- <button *ngIf="!user" mat-flat-button class="success-button btn" (click)="login()">
+          ورود به حساب کاربری
+          <img class="icon" src="./assets/images/logos/user.svg" alt="" />
+        </button>
+        <button *ngIf="user" mat-flat-button class="success-button btn" [matMenuTriggerFor]="menu">
+          {{ user.nickname + ' ' + user.family_name }}
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/user-profile/info">
+            <i> پروفایل کاربری </i>
+          </button>
+          <button mat-menu-item (click)="logout()">
+            <i> خروج </i>
+          </button>
+        </mat-menu> -->
+      </div>
+    </div>
+  </div>
+</mat-toolbar>

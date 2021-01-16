@@ -23,7 +23,7 @@ export class AddressService {
   }
 
   private getAllPublicAddresses(): Observable<Address[]> {
-    return this.http.get(`${environment.mockServer}/`).pipe(map(res => {
+    return this.http.get(`${environment.mockServer}/public-addresses`).pipe(map(res => {
       this._publicAddresses$.next(res as Address[]);
       return res as Address[];
     }));
