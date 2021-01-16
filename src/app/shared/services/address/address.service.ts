@@ -30,25 +30,25 @@ export class AddressService {
   }
 
   public createPublicAddress(address: Address): Observable<Address> {
-    return this.http.post(`${environment.mockServer}/`, address).pipe(map(res => res as Address), finalize(() => {
+    return this.http.post(`${environment.mockServer}/public-addresses`, address).pipe(map(res => res as Address), finalize(() => {
       this.getAllPublicAddresses().subscribe();
     }));
   }
 
   public editPublicAddress(address: Address, id: number): Observable<Address> {
-    return this.http.post(`${environment.mockServer}/${id}`, address).pipe(map(res => res as Address), finalize(() => {
+    return this.http.post(`${environment.mockServer}/public-addresses/${id}`, address).pipe(map(res => res as Address), finalize(() => {
       this.getAllPublicAddresses().subscribe();
     }));
   }
 
   public getPublicAddressDetail(id: number): Observable<Address> {
-    return this.http.get(`${environment.mockServer}/${id}`).pipe(map(res => res as Address), finalize(() => {
+    return this.http.get(`${environment.mockServer}/public-addresses/${id}`).pipe(map(res => res as Address), finalize(() => {
       this.getAllPublicAddresses().subscribe();
     }));
   }
 
   public deletePublicAddress(id: number): Observable<{}> {
-    return this.http.delete(`${environment.mockServer}/${id}`).pipe(map(res => res as {}), finalize(() => {
+    return this.http.delete(`${environment.mockServer}/public-addresses/${id}`).pipe(map(res => res as {}), finalize(() => {
       this.getAllPublicAddresses().subscribe();
     }));
   }
