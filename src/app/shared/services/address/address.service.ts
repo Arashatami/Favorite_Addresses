@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { finalize, map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { Address } from '../../models/Address';
 import { environment } from 'src/environments/environment';
@@ -18,28 +18,39 @@ export class AddressService {
 
   constructor(
     private http: HttpClient,
-  ) { }
+  ) {
+    this.getAllPublicAddresses().subscribe();
+  }
 
   private getAllPublicAddresses(): Observable<Address[]> {
-    return this.http.get(`${environment.mockServer}/`).pipe(map(res => res as Address[])).subscribe(res => {
-      this._publicAddresses$.next(res);
-    });
+    return this.http.get(`${environment.mockServer}/`).pipe(map(res => {
+      this._publicAddresses$.next(res as Address[]);
+      return res as Address[];
+    }));
   }
 
   public createPublicAddress(address: Address): Observable<Address> {
-    return this.http.post(`${environment.mockServer}/`, address).pipe(map(res => res as Address));
+    return this.http.post(`${environment.mockServer}/`, address).pipe(map(res => res as Address), finalize(() => {
+      this.getAllPublicAddresses().subscribe();
+    }));
   }
 
   public editPublicAddress(address: Address, id: number): Observable<Address> {
-    return this.http.post(`${environment.mockServer}/${id}`, address).pipe(map(res => res as Address));
+    return this.http.post(`${environment.mockServer}/${id}`, address).pipe(map(res => res as Address), finalize(() => {
+      this.getAllPublicAddresses().subscribe();
+    }));
   }
 
   public getPublicAddressDetail(id: number): Observable<Address> {
-    return this.http.get(`${environment.mockServer}/${id}`).pipe(map(res => res as Address));
+    return this.http.get(`${environment.mockServer}/${id}`).pipe(map(res => res as Address), finalize(() => {
+      this.getAllPublicAddresses().subscribe();
+    }));
   }
 
   public deletePublicAddress(id: number): Observable<{}> {
-    return this.http.delete(`${environment.mockServer}/${id}`).pipe(map(res => res as {}));
+    return this.http.delete(`${environment.mockServer}/${id}`).pipe(map(res => res as {}), finalize(() => {
+      this.getAllPublicAddresses().subscribe();
+    }));
   }
 
 
