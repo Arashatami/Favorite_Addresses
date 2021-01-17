@@ -1,0 +1,44 @@
+$green-1: #b4e65a;
+$green-2: #9bd714;
+$green-3: #06df6f;
+
+$gray-1: #646e78;
+$gray-2: #575b69;
+$gray-3: #e6ebf0;
+$gray-4: #aab4be;
+
+$black-1: #323741;
+
+@mixin box-shadow-1 {
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 65, 165, 0.07);
+  -moz-box-shadow: 0 3px 20px 0 rgba(0, 65, 165, 0.07);
+  box-shadow: 0 3px 20px 0 rgba(0, 65, 165, 0.07);
+  transition: 200ms box-shadow ease-in-out;
+  &:hover {
+    -webkit-box-shadow: 0 3px 20px 0 rgba(0, 65, 165, 0.13);
+    -moz-box-shadow: 0 3px 20px 0 rgba(0, 65, 165, 0.13);
+    box-shadow: 0 3px 20px 0 rgba(0, 65, 165, 0.13);
+  }
+}
+
+.green-button {
+  background-color: $green-3 !important;
+  width: 191px;
+  height: 40px;
+  border-radius: 5px;
+
+  ::ng-deep.mat-button-wrapper {
+    color: white !important;
+  }
+}
+
+.red-button {
+  background-color: rgb(255, 79, 79) !important;
+  width: 191px;
+  height: 40px;
+  border-radius: 5px;
+
+  ::ng-deep.mat-button-wrapper {
+    color: white !important;
+  }
+}

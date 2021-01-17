@@ -8,8 +8,21 @@ body{
 html,
 body,
 * {
+  font-size: 14px;
+  // height: 100%;
   font-family: IRANSans;
 }
 
+
+// NOTE: From `2.0.0-beta.10`, you can now pass the typography via the mat-core() mixin:
+@import '~@angular/material/theming';
+$custom-typography: mat-typography-config(
+  $font-family: IRANSans
+);
+@include mat-core($custom-typography);
+
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0;}
+
+
