@@ -24,7 +24,6 @@ export class AppComponent {
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
   ngAfterViewInit(): void {
-    debugger;
     this.menuService.setSidenav(this.menu);
   }
 

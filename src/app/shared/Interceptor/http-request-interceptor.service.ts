@@ -12,7 +12,6 @@ export class HttpRequestInterceptor implements HttpInterceptor {
   }
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    debugger;
     const contentType = request.headers.get('Content-Type');
 
     // set Content-Type and Accept header if it is not set before
