@@ -36,7 +36,7 @@ export class AddressService {
   }
 
   public editPublicAddress(address: Address, id: number): Observable<Address> {
-    return this.http.post(`${environment.mockServer}/public-addresses/${id}`, address).pipe(map(res => res as Address), finalize(() => {
+    return this.http.put(`${environment.mockServer}/public-addresses/${id}`, address).pipe(map(res => res as Address), finalize(() => {
       this.getAllPublicAddresses().subscribe();
     }));
   }

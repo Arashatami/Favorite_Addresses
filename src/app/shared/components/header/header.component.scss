@@ -33,6 +33,9 @@
   }
   .logo {
     // height: 30px;
+    @media only screen and (max-width: 959px) {
+      height: 35px;
+    }
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
