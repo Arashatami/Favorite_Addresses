@@ -1,9 +1,27 @@
-@import '/src//app/shared/styles/theme.scss';
-
+@import "/src//app/shared/styles/theme.scss";
 
 h1 {
   font-weight: 500;
   color: $black-1;
+}
+.sidenav-content {
+  width: 20vw;
+  min-width: 320px;
+  max-width: 400px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+
+  button {
+    margin-top: auto;
+    width: 100%;
+  }
+}
+
+.addresses {
+  max-height: calc(100% - 100px)
 }
 
 .address-item {
@@ -11,6 +29,7 @@ h1 {
   margin-bottom: 10px;
   padding: 5px 10px;
   color: #646e78;
+  margin: 5px;
 
   .location-icon {
     font-size: 30px;
@@ -30,7 +49,7 @@ h1 {
         color: $gray-4;
         cursor: pointer;
         transition: 200ms color ease-in-out;
-        &:hover{
+        &:hover {
           color: $green-3;
         }
       }
