@@ -1,0 +1,287 @@
+﻿@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url('eot/IRANSansWeb(FaNum)_Black.eot');
+    src: url('eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/IRANSansWeb(FaNum)_Black.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('eot/IRANSansWeb(FaNum)_Bold.eot');
+    src: url('eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('eot/IRANSansWeb(FaNum)_Medium.eot');
+    src: url('eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('eot/IRANSansWeb(FaNum)_Light.eot');
+    src: url('eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/IRANSansWeb(FaNum)_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('eot/IRANSansWeb(FaNum)_UltraLight.eot');
+    src: url('eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('eot/IRANSansWeb(FaNum).eot');
+    src: url('eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/IRANSansWeb(FaNum).woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/IRANSansWeb(FaNum).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+    src: url('eot/iranyekanwebbold(fanum).eot');
+    src: url('eot/iranyekanwebbold(fanum).eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/iranyekanwebbold(fanum).woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/iranyekanwebbold(fanum).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/iranyekanwebbold(fanum).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url('eot/iranyekanweblight(fanum).eot');
+    src: url('eot/iranyekanweblight(fanum).eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/iranyekanweblight(fanum).woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/iranyekanweblight(fanum).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/iranyekanweblight(fanum).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('eot/iranyekanwebregular(fanum).eot');
+    src: url('eot/iranyekanwebregular(fanum).eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('woff2/iranyekanwebregular(fanum).woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('woff/iranyekanwebregular(fanum).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('ttf/iranyekanwebregular(fanum).ttf') format('truetype');
+}
+@font-face {
+  font-family: "BNazanin";
+  src: url("./eot/BNazanin.eot");
+  src: url("./eot/BNazanin.eot?#iefix") format("embedded-opentype"),
+    url("./woff/BNazanin.woff") format("woff"),
+    url("./ttf/BNazanin.ttf") format("truetype"),
+    url("./svg/BNazanin.svg#BNazanin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'font-phx';
+    src: url('eot/font-phx.eot?55785377');
+    src: url('eot/font-phx.eot?55785377#iefix') format('embedded-opentype'),
+        url('woff2/font-phx.woff2?55785377') format('woff2'),
+        url('woff/font-phx.woff?55785377') format('woff'),
+        url('ttf/font-phx.ttf?55785377') format('truetype'),
+        url('svg/font-phx.svg?55785377#font-phx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: "data-table";
+  src: url("./eot/data-table.eot");
+  src: url("./eot/data-table.eot?#iefix") format("embedded-opentype"),
+    url("./woff/data-table.woff") format("woff"),
+    url("./ttf/data-table.ttf") format("truetype"),
+    url("./svg/data-table.svg#data-table") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "data-table" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="datatable-icon-"]:before,
+[class*=" datatable-icon-"]:before {
+  font-family: "data-table" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.datatable-icon-filter:before {
+  content: "\62";
+}
+.datatable-icon-collapse:before {
+  content: "\61";
+}
+.datatable-icon-expand:before {
+  content: "\63";
+}
+.datatable-icon-close:before {
+  content: "\64";
+}
+.datatable-icon-up:before {
+  content: "\65";
+}
+.datatable-icon-down:before {
+  content: "\66";
+}
+.datatable-icon-sort:before {
+  content: "\67";
+}
+.datatable-icon-done:before {
+  content: "\68";
+}
+.datatable-icon-done-all:before {
+  content: "\69";
+}
+.datatable-icon-search:before {
+  content: "\6a";
+}
+.datatable-icon-pin:before {
+  content: "\6b";
+}
+.datatable-icon-add:before {
+  content: "\6d";
+}
+.datatable-icon-left:before {
+  content: "\6f";
+}
+.datatable-icon-right:before {
+  content: "\70";
+}
+.datatable-icon-skip:before {
+  content: "\71";
+}
+.datatable-icon-prev:before {
+  content: "\72";
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'font-phx';
+    src: url('font-phx.svg?55785377#font-phx') format('svg');
+  }
+}
+*/
+
+.fp {
+    font-family: "font-phx";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.fp-linkedin:before {
+    content: '\e801';
+}
+/* '' */
+.fp-facebook:before {
+    content: '\e802';
+}
+/* '' */
+.fp-twitter:before {
+    content: '\e803';
+}
+/* '' */
+.fp-play:before {
+    content: '\e804';
+}
+/* '' */
+.fp-apple:before {
+    content: '\e805';
+}
+/* '' */
+.fp-android:before {
+    content: '\e806';
+}
+/* '' */
+.fp-instagram:before {
+    content: '\e807';
+}
+/* '' */
+.fp-next-solid:before {
+    content: '\e808';
+}
+/* '' */
+.fp-prev-solid:before {
+    content: '\e809';
+}
+/* '' */
+.fp-next:before {
+    content: '\e810';
+}
+/* '' */
+.fp-prev:before {
+    content: '\e811';
+}
+/* '' */
