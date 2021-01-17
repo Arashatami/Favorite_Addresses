@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'map',
+    path: '**',
     loadChildren: () =>
       import('./modules/map/map.module').then(
         (m) => m.MapModule
