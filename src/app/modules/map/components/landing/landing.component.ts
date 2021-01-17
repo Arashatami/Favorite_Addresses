@@ -39,7 +39,7 @@ export class LandingComponent implements OnInit {
     const markerIcon = {
       icon: L.icon({
         iconSize: [40, 40],
-        iconAnchor: [19, 39],
+        iconAnchor: [20, 38],
         popupAnchor: [2, -40],
         // specify the path here
         iconUrl:
@@ -73,13 +73,16 @@ export class LandingComponent implements OnInit {
         popupAnchor: [2, -40],
         // specify the path here
         iconUrl:
-          "./assets/images/marker-ball.ico",
+          "./assets/images/red-marker-ball.ico",
       }),
       draggable: true,
       clickable: true
     };
 
-
+    let dragMarker = L.marker([35.729139, 51.300281], drag_markerIcon).on('dragend', e => {
+      debugger;
+      this.mapService.moveToView(e.target.getLatLng().lat, e.target.getLatLng().lng)
+    });
 
 
     this.addressService.publicAddresses.subscribe(res => {
@@ -88,13 +91,17 @@ export class LandingComponent implements OnInit {
         this.markersLayer.addLayer(L.marker([loc.latitude, loc.longitude], markerIcon));
         this.markersLayer.addLayer(L.marker([loc.latitude, loc.longitude], animatedCircleIcon));
       })
-      this.markersLayer.addLayer(L.marker([35.729139, 51.300281], drag_markerIcon).on('dragend', e => {
-        debugger;
-        this.mapService.moveToView(e.target.getLatLng().lat, e.target.getLatLng().lng)
-      }))
+      this.markersLayer.addLayer(dragMarker);
 
     });
-    this.menuService.open()
+
+    this.mapService.map.on('dragend', e => {
+      debugger;
+      dragMarker.setLatLng(e.target.getCenter())
+    });
+
+
+    this.menuService.open();
   }
 
   clear() {
