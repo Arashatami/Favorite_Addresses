@@ -3,10 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'favorite',
+    path: 'map',
     loadChildren: () =>
-      import('./modules/favorite/favorite.module').then(
-        (m) => m.FavoriteModule
+      import('./modules/map/map.module').then(
+        (m) => m.MapModule
       )
   }
 ];
