@@ -5,6 +5,11 @@
 body{
   margin: 0;
 }
+html,
+body,
+* {
+  font-family: IRANSans;
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
