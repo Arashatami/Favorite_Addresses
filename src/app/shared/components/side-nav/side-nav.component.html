@@ -1,9 +1,24 @@
-<div>
+<div style="padding: 20px 30px">
+  <h1>محل های مورد علاقه عمومی</h1>
   <div
+    fxLayout="row"
+    fxLayoutAlign="flex-start center"
+    class="address-item"
     *ngFor="let loc of locationcs"
     (click)="moveToView(loc.latitude, loc.longitude)"
   >
-    <h4>{{ loc.name }}</h4>
-    <p>{{ loc.address }}</p>
+    <mat-icon class="location-icon">location_on</mat-icon>
+    <div class="location-content">
+      <h3>
+        <b>نام : </b>
+        {{ loc.name }}
+        <mat-icon class="edit-icon" (click)="editAddress(loc)">more_horiz</mat-icon>
+      </h3>
+      <p>
+        <b> آدرس : </b>
+        {{ loc.address }}
+      </p>
+    </div>
   </div>
 </div>
+<div></div>

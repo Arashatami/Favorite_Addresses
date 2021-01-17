@@ -6,6 +6,7 @@ import * as L from 'leaflet';
 })
 export class MapService {
   public map: L.Map;
+  public markersLayer;
   constructor() { }
 
   moveToView(lat: number, lng: number) {

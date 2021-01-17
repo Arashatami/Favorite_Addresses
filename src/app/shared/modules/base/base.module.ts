@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatIconModule,
     MatDialogModule,
     MatMenuModule,
+    MatBottomSheetModule
   ],
   providers: [
     {
@@ -40,7 +42,7 @@ import { MatMenuModule } from '@angular/material/menu';
       multi: true,
     },
   ],
-  exports:[
+  exports: [
     FlexLayoutModule,
     HttpClientModule,
     MatToolbarModule,
@@ -53,6 +55,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatIconModule,
     MatDialogModule,
     MatMenuModule,
+    MatBottomSheetModule
   ]
 })
 export class BaseModule { }

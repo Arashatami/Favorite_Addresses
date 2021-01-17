@@ -1,0 +1,24 @@
+@import '/src//app/shared/styles/theme.scss';
+
+.close{
+  color: red;
+  text-shadow: 2px 2px 0px #FFFFFF, 2px 2px 0px rgba(0,0,0,0.15);
+}
+
+.header-title{
+  color: $green-3;
+}
+
+.red-button{
+  margin-left: 20px;
+}
+
+.title{
+  font-style: oblique;
+  color: $gray-1;
+}
+.form{
+  mat-form-field{
+    margin-bottom: 5px;
+  }
+}

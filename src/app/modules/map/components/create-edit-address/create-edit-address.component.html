@@ -1,0 +1,79 @@
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <h2 class="header-title">{{ dialogTitle }}</h2>
+  <h4 class="title">"پین قرمز رادر محل مورد نظر قرار دهید."</h4>
+  <button mat-icon-button (click)="cancel()" aria-label="انصراف">
+    <mat-icon class="close">close</mat-icon>
+  </button>
+</div>
+<form
+  [formGroup]="Form"
+  class="form"
+  fxLayout="row wrap"
+  fxLayoutAlign="center center"
+>
+  <mat-form-field appearance="outline" fxFlex="100">
+    <mat-label>نام محل</mat-label>
+    <input name="name" formControlName="name" matInput required />
+    <mat-error
+      *ngIf="
+        Form.get('name').hasError('minlength') ||
+        Form.get('name').hasError('required')
+      "
+    >
+      نام محل باید حداقل
+      <strong>3</strong>
+      رقم باشد.
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" fxFlex="100">
+    <mat-label>نام محل</mat-label>
+    <textarea
+      name="address"
+      formControlName="address"
+      matInput
+      required
+    ></textarea>
+    <mat-error *ngIf="Form.get('address').hasError('required')">
+      آدرس ضروری است.
+    </mat-error>
+  </mat-form-field>
+
+  <button
+    fxFlex="48"
+    *ngIf="action !== 'edit'"
+    mat-raised-button
+    class="green-button"
+    (click)="createAddress()"
+    [disabled]="Form.invalid || loading"
+    aria-label="SAVE"
+  >
+    ایجاد
+    <img *ngIf="loading" height="40px" src="./assets/images/loading.svg" />
+  </button>
+  <button
+    fxFlex="48"
+    *ngIf="action === 'edit'"
+    mat-raised-button
+    class="red-button"
+    (click)="deleteAddress()"
+    [disabled]="Form.invalid || loading"
+    aria-label="SAVE"
+  >
+    حذف
+    <img *ngIf="loading" height="40px" src="./assets/images/loading.svg" />
+  </button>
+
+  <button
+    fxFlex="48"
+    *ngIf="action === 'edit'"
+    mat-raised-button
+    class="green-button"
+    (click)="editAddress()"
+    [disabled]="Form.invalid || loading"
+    aria-label="SAVE"
+  >
+    اصلاح
+    <img *ngIf="loading" height="40px" src="./assets/images/loading.svg" />
+  </button>
+</form>
