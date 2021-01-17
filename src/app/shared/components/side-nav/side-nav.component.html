@@ -1,1 +1,9 @@
-<p>side-nav works!</p>
+<div>
+  <div
+    *ngFor="let loc of locationcs"
+    (click)="moveToView(loc.latitude, loc.longitude)"
+  >
+    <h4>{{ loc.name }}</h4>
+    <p>{{ loc.address }}</p>
+  </div>
+</div>

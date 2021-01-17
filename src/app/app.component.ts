@@ -19,10 +19,12 @@ export class AppComponent {
     media: MediaMatcher
   ) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
+
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
   ngAfterViewInit(): void {
+    debugger;
     this.menuService.setSidenav(this.menu);
   }
 
