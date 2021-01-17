@@ -25,6 +25,7 @@
     "@asymmetrik/ngx-leaflet": "^8.1.0",
     "leaflet": "^1.7.1",
     "ng-snotify": "^9.0.1",
+    "ngx-scrollbar": "^7.5.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

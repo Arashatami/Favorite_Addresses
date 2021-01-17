@@ -52,7 +52,7 @@
     <img *ngIf="loading" height="40px" src="./assets/images/loading.svg" />
   </button>
   <button
-    fxFlex="48"
+    fxFlex="calc(50% - 20px)"
     *ngIf="action === 'edit'"
     mat-raised-button
     class="red-button"
@@ -65,7 +65,7 @@
   </button>
 
   <button
-    fxFlex="48"
+    fxFlex="calc(50% - 20px)"
     *ngIf="action === 'edit'"
     mat-raised-button
     class="green-button"

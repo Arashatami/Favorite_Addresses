@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { NgScrollbarModule } from 'ngx-scrollbar';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
     MatIconModule,
     MatDialogModule,
     MatMenuModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    NgScrollbarModule
   ],
   providers: [
     {
@@ -55,7 +57,8 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
     MatIconModule,
     MatDialogModule,
     MatMenuModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    NgScrollbarModule
   ]
 })
 export class BaseModule { }

@@ -1,24 +1,36 @@
-<div style="padding: 20px 30px">
+<div class="sidenav-content">
   <h1>محل های مورد علاقه عمومی</h1>
-  <div
-    fxLayout="row"
-    fxLayoutAlign="flex-start center"
-    class="address-item"
-    *ngFor="let loc of locationcs"
-    (click)="moveToView(loc.latitude, loc.longitude)"
-  >
-    <mat-icon class="location-icon">location_on</mat-icon>
-    <div class="location-content">
-      <h3>
-        <b>نام : </b>
-        {{ loc.name }}
-        <mat-icon class="edit-icon" (click)="editAddress(loc)">more_horiz</mat-icon>
-      </h3>
-      <p>
-        <b> آدرس : </b>
-        {{ loc.address }}
-      </p>
+  <ng-scrollbar visibility="hover" class="addresses">
+    <div
+      fxLayout="row"
+      fxLayoutAlign="flex-start center"
+      class="address-item"
+      *ngFor="let loc of locationcs"
+      (click)="moveToView(loc.latitude, loc.longitude)"
+    >
+      <mat-icon class="location-icon">location_on</mat-icon>
+      <div class="location-content">
+        <h3>
+          <b>نام : </b>
+          {{ loc.name }}
+          <mat-icon class="edit-icon" (click)="editAddress(loc)"
+            >more_horiz</mat-icon
+          >
+        </h3>
+        <p>
+          <b> آدرس : </b>
+          {{ loc.address }}
+        </p>
+      </div>
     </div>
-  </div>
+  </ng-scrollbar>
+  <button
+    mat-raised-button
+    class="green-button"
+    (click)="newAddress()"
+    aria-label="SAVE"
+  >
+    ایجاد
+  </button>
 </div>
-<div></div>
+

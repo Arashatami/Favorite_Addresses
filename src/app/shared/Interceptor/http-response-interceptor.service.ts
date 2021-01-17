@@ -45,7 +45,6 @@ export class HttpResponseInterceptor implements HttpInterceptor {
                 }),
                 catchError((response: HttpErrorResponse) => {
                     if (response.status === 400) {
-                        // debugger;
                         if (response.error.error == "invalid_grant") {
                             this.notify.error(
                                 `${response.error.result}`,
