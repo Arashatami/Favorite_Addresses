@@ -17,6 +17,7 @@ export class LandingComponent implements OnInit {
     private menuService: MenuService,
     private mapService: MapService
   ) { }
+  subscription;
   map;
   markersLayer = new L.LayerGroup();
   options = {
@@ -29,6 +30,11 @@ export class LandingComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+
 
   onMapReady(map) {
     this.mapService.map = map;
@@ -62,7 +68,7 @@ export class LandingComponent implements OnInit {
 
 
 
-    this.addressService.publicAddresses.subscribe(res => {
+    this.subscription = this.addressService.publicAddresses.subscribe(res => {
       this.clear();
       res.forEach(loc => {
         this.markersLayer.addLayer(L.marker([loc.latitude, loc.longitude], markerIcon));
