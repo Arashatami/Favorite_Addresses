@@ -9,5 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## فاز اول
 تلاشمو کردم با اندک وقتی که میگذارم فاز اول رو به نسبت خوب انجام بدم 
 
+لطفا از تگ ورژن یک کلون کنید پروژه را تا نا خواسته گیف ها را نیز دانلود نکنید.
+
 ![نسخه گوشی](https://github.com/Arashatami/Favorite_Addresses/blob/master/src/assets/gifs/2.gif)
 ![نسخه دسکتاپ](https://github.com/Arashatami/Favorite_Addresses/blob/master/src/assets/gifs/3.gif)
