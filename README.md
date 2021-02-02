@@ -6,8 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## فاز اول
-تلاشمو کردم با اندک وقتی که میگذارم فاز اول رو به نسبت خوب انجام بدم 
+ 
 
 لطفا  پروژه را از [برنچ](https://github.com/Arashatami/Favorite_Addresses/tree/dev)  کلون کنید . تا نا خواسته گیف ها را نیز دانلود نکنید.
 
